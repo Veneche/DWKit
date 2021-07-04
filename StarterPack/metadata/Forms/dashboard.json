@@ -2,7 +2,8 @@
   {
     "key": "staticcontent_1",
     "data-buildertype": "staticcontent",
-    "content": "<h1>DWKit Starter Pack</h1>\n <h2><a href=\"https://dwkit.com\">https://dwkit.com</a></h2>\n\n  <h2><a href=\"/admin\">Click here for open Admin Panel</a></h2>\n\n\n<p>DWKit is a low-code platform made with simplicity and flexibility in mind. DWKit allows you to model, automate and execute mission-critical business processes, whatever industry youíre operating in.</p>\n \n<p>Demo on-line: <a href=\"http://demo.dwkit.com\">http://demo.dwkit.com</a></p>\n<p>More information about how to use DWKit look at the <a href=\"https://dwkit.com/documentation/\">https://dwkit.com/documentation/</a>.</p>",
-    "isHtml": true
+    "content": "<h1><em>Venéche's Personal Library Collection</em></h1>\n\n\n<p>I have a great love for reading and have collected my share of books over the years. When I moved to Australia more than three years ago, I shipped two large boxes of books all the way from South Africa!</p>\n \n<p>My favourite genre is fantasy, but I do enjoy the occasional murder mystery or fiction, if it is intriguing enough.</p>\n<p>My favourite authors are writers of fantasy books and include Terry Pratchett and Erin Morgenstern. Terry Pratchett's Discworld novels are packed with satirical humour that brighten anyone's day.</p>\n<br/>\n<p>Please click on any of the sidebar menu options to view parts of my collection by Book, Author or Genre.</p>\n<hr/>\n<br/>\n<p>For a list of Terry Pratchett's achievements and novels, <a href=\"https://www.terrypratchettbooks.com/\">click here</a>.</p>\n<br/>\n<p><strong>Terry Pratchett quote of the day:</strong></p>\n<blockquote>\"Always be wary of any helpful item that weighs less than its operating manual.\"</blockquote>",
+    "isHtml": true,
+    "style-source": "text-align:center;"
   }
 ]
