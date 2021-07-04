@@ -1,0 +1,34 @@
+{
+  "name": "CreateAuthor",
+  "lastUpdate": "2021-07-04T13:07:09.1950659+10:00",
+  "entityId": "dfd6037f-a237-47c0-a381-964c267204a7",
+  "isTemplate": false,
+  "triggers": [],
+  "dataMap": [
+    {
+      "id": "e25b5aef-3b29-3315-f99b-733181560906",
+      "attributeId": "4fd748b0-be68-45df-9942-3dff95588104",
+      "control": "firstName",
+      "isEditable": false,
+      "isLoadable": true,
+      "attributeSource": 0
+    },
+    {
+      "id": "3115a9cc-1850-717e-f43d-26055f44db02",
+      "attributeId": "a6107a45-8d64-461e-af96-a7f358ff1f66",
+      "isEditable": false,
+      "isLoadable": true,
+      "attributeSource": 0
+    },
+    {
+      "id": "a7aceff4-92f3-642f-0e72-83db04ef1ee5",
+      "attributeId": "cdb8027a-da8b-446d-be66-a5b596cbf6a9",
+      "control": "lastName",
+      "isEditable": false,
+      "isLoadable": true,
+      "attributeSource": 0
+    }
+  ],
+  "dataColl": [],
+  "actionHandlers": []
+}

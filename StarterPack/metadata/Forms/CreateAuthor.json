@@ -1,0 +1,60 @@
+[
+  {
+    "key": "CreateAuthor",
+    "data-buildertype": "header",
+    "content": "Add New Author",
+    "size": "medium"
+  },
+  {
+    "key": "form_1",
+    "data-buildertype": "form",
+    "style-width": "50%",
+    "children": [
+      {
+        "key": "firstName",
+        "data-buildertype": "input",
+        "label": "First Name",
+        "fluid": true,
+        "onChangeTimeout": 200,
+        "other-required": true
+      },
+      {
+        "key": "lastName",
+        "data-buildertype": "input",
+        "label": "Last Name",
+        "fluid": true,
+        "onChangeTimeout": 200,
+        "other-required": true
+      },
+      {
+        "key": "Save",
+        "data-buildertype": "button",
+        "content": "Save",
+        "primary": false,
+        "secondary": false,
+        "events": {
+          "onClick": {
+            "active": true,
+            "triggers": [
+              {
+                "actions": [
+                  "validate",
+                  "save",
+                  "redirect"
+                ],
+                "parameters": [
+                  {
+                    "name": "target",
+                    "value": "/form/Author"
+                  }
+                ],
+                "targets": []
+              }
+            ]
+          }
+        },
+        "basic": true
+      }
+    ]
+  }
+]

@@ -25,6 +25,63 @@
         "readOnly": true,
         "idField": "Id"
       }
-    ]
+    ],
+    "style-hidden": true
+  },
+  {
+    "key": "createAuthor",
+    "data-buildertype": "button",
+    "content": "Add New Author",
+    "basic": true,
+    "events": {
+      "onClick": {
+        "active": true,
+        "triggers": [
+          {
+            "actions": [
+              "redirect"
+            ],
+            "parameters": [
+              {
+                "name": "target",
+                "value": "/form/CreateAuthor"
+              }
+            ],
+            "targets": []
+          }
+        ]
+      }
+    },
+    "style-marginBottom": "20px"
+  },
+  {
+    "key": "form_2",
+    "data-buildertype": "form",
+    "children": [
+      {
+        "key": "AuthorGrid",
+        "data-buildertype": "gridview",
+        "columns": [
+          {
+            "key": "FirstName",
+            "name": "First Name",
+            "sortable": true,
+            "filterable": false,
+            "resizable": false
+          },
+          {
+            "key": "LastName",
+            "name": "Last Name",
+            "sortable": true,
+            "filterable": false,
+            "resizable": false
+          }
+        ],
+        "style-width": "100%"
+      }
+    ],
+    "style-marginLeft": "",
+    "style-marginRight": "",
+    "style-width": "50%"
   }
 ]
