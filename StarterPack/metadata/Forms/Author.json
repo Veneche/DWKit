@@ -1,0 +1,30 @@
+[
+  {
+    "key": "Authors",
+    "data-buildertype": "header",
+    "content": "Authors",
+    "size": "medium"
+  },
+  {
+    "key": "form_1",
+    "data-buildertype": "form",
+    "children": [
+      {
+        "key": "AuthorCollection",
+        "data-buildertype": "collectioneditor",
+        "columns": [
+          {
+            "key": "FirstName",
+            "name": "Author First Name"
+          },
+          {
+            "key": "LastName",
+            "name": "Author Last Name"
+          }
+        ],
+        "readOnly": true,
+        "idField": "Id"
+      }
+    ]
+  }
+]

@@ -1,0 +1,121 @@
+[
+  {
+    "key": "Books",
+    "data-buildertype": "header",
+    "content": "Books",
+    "size": "medium"
+  },
+  {
+    "key": "formgroup_1",
+    "data-buildertype": "formgroup",
+    "widths": "equal",
+    "children": [
+      {
+        "key": "search_1",
+        "data-buildertype": "search"
+      }
+    ]
+  },
+  {
+    "key": "form_1",
+    "data-buildertype": "form",
+    "children": [
+      {
+        "key": "BookCollection",
+        "data-buildertype": "collectioneditor",
+        "columns": [
+          {
+            "key": "Title",
+            "name": "Title"
+          },
+          {
+            "key": "FirstName",
+            "name": "Author First Name"
+          },
+          {
+            "__id": "CLIENT_32baecc0-dc69-11eb-b3ef-fdb8fc43664e",
+            "key": "LastName",
+            "name": "Author Last Name"
+          },
+          {
+            "__id": "CLIENT_ac079660-dc68-11eb-b3ef-fdb8fc43664e",
+            "key": "Name",
+            "name": "Genre"
+          },
+          {
+            "__id": "CLIENT_b0e577b0-dc68-11eb-b3ef-fdb8fc43664e",
+            "key": "Rating",
+            "name": "Rating",
+            "control": "number",
+            "width": "100px"
+          }
+        ],
+        "idField": "Id",
+        "readOnly": true,
+        "events": {
+          "onChange": {
+            "active": false,
+            "triggers": [
+              {
+                "actions": [],
+                "parameters": [
+                  {
+                    "name": "",
+                    "value": ""
+                  }
+                ],
+                "targets": []
+              }
+            ]
+          },
+          "onAdd": {
+            "active": false,
+            "triggers": [
+              {
+                "actions": [],
+                "parameters": [
+                  {
+                    "name": "",
+                    "value": ""
+                  }
+                ],
+                "targets": []
+              }
+            ]
+          },
+          "onDelete": {
+            "active": false,
+            "triggers": [
+              {
+                "actions": [],
+                "parameters": [
+                  {
+                    "name": "",
+                    "value": ""
+                  }
+                ],
+                "targets": []
+              }
+            ]
+          },
+          "onCopy": {
+            "active": false,
+            "triggers": [
+              {
+                "actions": [],
+                "parameters": [
+                  {
+                    "name": "",
+                    "value": ""
+                  }
+                ],
+                "targets": []
+              }
+            ]
+          }
+        },
+        "style-source": "text-align:left;"
+      }
+    ]
+  }
+]

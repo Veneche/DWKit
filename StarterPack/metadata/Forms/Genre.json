@@ -1,0 +1,25 @@
+[
+  {
+    "key": "Genres",
+    "data-buildertype": "header",
+    "content": "Genres",
+    "size": "medium"
+  },
+  {
+    "key": "form_1",
+    "data-buildertype": "form",
+    "children": [
+      {
+        "key": "GenreCollection",
+        "data-buildertype": "collectioneditor",
+        "columns": [
+          {
+            "key": "Name",
+            "name": "Genre Name"
+          }
+        ],
+        "readOnly": true
+      }
+    ]
+  }
+]

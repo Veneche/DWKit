@@ -1,0 +1,34 @@
+{
+  "name": "Genre",
+  "lastUpdate": "2021-07-04T12:06:34.2438111+10:00",
+  "isTemplate": false,
+  "triggers": [],
+  "dataMap": [],
+  "dataColl": [
+    {
+      "id": "208a3867-fdd1-ad41-c13c-7cd4a6d7008a",
+      "entityId": "7bc2492b-254d-469d-bea0-101dfec22ccb",
+      "control": "GenreCollection",
+      "dataMap": [
+        {
+          "id": "5aa44cb0-16dc-eb85-6602-411c3d1bbc1a",
+          "attributeId": "3cc29f97-3c8c-44f2-8768-47c2e71baffc",
+          "isEditable": false,
+          "isLoadable": false,
+          "attributeSource": 0
+        },
+        {
+          "id": "ace4e994-7d38-aaae-4e9c-5eba46542a18",
+          "attributeId": "34471b71-539f-408c-a581-d3e32e7a54e8",
+          "control": "Name",
+          "isEditable": false,
+          "isLoadable": true,
+          "attributeSource": 0
+        }
+      ],
+      "readOnly": false,
+      "triggers": []
+    }
+  ],
+  "actionHandlers": []
+}
