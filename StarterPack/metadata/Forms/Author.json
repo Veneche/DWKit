@@ -8,76 +8,101 @@
   {
     "key": "author_staticcontent",
     "data-buildertype": "staticcontent",
-    "content": "<p>This is a list of a few of the authors in the library. </p>\n<p>Click <strong>Add New Author</strong> in order to add an author to the collection.</p>\n<p>In order to edit an existing author's details, double click on the relevant row in the grid below.</p>\n<hr/>",
+    "content": "<p>This page displays a list of authors of a few of the books in Venéche's personal library.</p>\n<ul>\n<li>It is possible to filter this list by Author First Name and / or Last Name. Enter a value in one of the following inputs in order to filter the list.</li>\n<li>Edit or update the details of an author by double-clicking on the relevant author row.</li>\n<li>Add a new author to the list by clicking the <strong>Add New Author</strong> button below the list</li>\n</ul>\n<hr/>\n<br/>",
     "isHtml": true,
     "style-marginBottom": "20px"
   },
   {
-    "key": "FilterByFirst",
-    "data-buildertype": "input",
-    "label": "Filter By First Name",
-    "fluid": true,
-    "onChangeTimeout": 200,
-    "style-width": "20%",
-    "style-marginLeft": "10px",
-    "style-source": "",
-    "events": {
-      "onChange": {
-        "active": true,
-        "triggers": [
+    "key": "formgroup_1",
+    "data-buildertype": "formgroup",
+    "widths": "equal",
+    "children": [
+      {
+        "key": "formgroup_2",
+        "data-buildertype": "formgroup",
+        "widths": "equal",
+        "children": [
           {
-            "actions": [
-              "setFilter",
-              "applyFilter"
-            ],
-            "parameters": [
-              {
-                "name": "column",
-                "value": "FirstName"
+            "key": "FilterByFirst",
+            "data-buildertype": "input",
+            "label": "Filter By First Name",
+            "fluid": false,
+            "onChangeTimeout": 200,
+            "style-width": "",
+            "style-marginLeft": "10px",
+            "style-source": "",
+            "events": {
+              "onChange": {
+                "active": true,
+                "triggers": [
+                  {
+                    "actions": [
+                      "setFilter",
+                      "applyFilter"
+                    ],
+                    "parameters": [
+                      {
+                        "name": "column",
+                        "value": "FirstName"
+                      }
+                    ],
+                    "targets": [
+                      "AuthorGrid"
+                    ]
+                  }
+                ]
               }
-            ],
-            "targets": [
-              "AuthorGrid"
-            ]
+            },
+            "style-marginBottom": "10px"
           }
-        ]
-      }
-    },
-    "style-marginBottom": "10px"
-  },
-  {
-    "key": "FilterByLast",
-    "data-buildertype": "input",
-    "label": "Filter By Last Name",
-    "fluid": true,
-    "onChangeTimeout": 200,
-    "style-width": "20%",
-    "style-marginLeft": "10px",
-    "events": {
-      "onChange": {
-        "active": true,
-        "triggers": [
+        ],
+        "style-source": "float:left;"
+      },
+      {
+        "key": "formgroup_3",
+        "data-buildertype": "formgroup",
+        "widths": "equal",
+        "children": [
           {
-            "actions": [
-              "setFilter",
-              "applyFilter"
-            ],
-            "parameters": [
-              {
-                "name": "column",
-                "value": "LastName"
+            "key": "FilterByLast",
+            "data-buildertype": "input",
+            "label": "Filter By Last Name",
+            "fluid": false,
+            "onChangeTimeout": 200,
+            "style-width": "",
+            "style-marginLeft": "10px",
+            "events": {
+              "onChange": {
+                "active": true,
+                "triggers": [
+                  {
+                    "actions": [
+                      "setFilter",
+                      "applyFilter"
+                    ],
+                    "parameters": [
+                      {
+                        "name": "column",
+                        "value": "LastName"
+                      }
+                    ],
+                    "targets": [
+                      "AuthorGrid"
+                    ]
+                  }
+                ]
               }
-            ],
-            "targets": [
-              "AuthorGrid"
-            ]
+            },
+            "style-source": "",
+            "style-marginTop": "",
+            "style-marginBottom": "10px"
           }
-        ]
+        ],
+        "style-source": "float:left;"
       }
-    },
-    "style-source": "",
-    "style-marginTop": "",
-    "style-marginBottom": "10px"
+    ],
+    "style-width": "50%",
+    "style-marginTop": ""
   },
   {
     "key": "form_2",
@@ -178,7 +203,7 @@
     ],
     "style-marginLeft": "",
     "style-marginRight": "",
-    "style-width": "50%",
+    "style-width": "100%",
     "events": {
       "onSubmit": {
         "active": false,
@@ -196,7 +221,8 @@
         ]
       }
     },
-    "style-height": "50%"
+    "style-height": "50%",
+    "style-marginTop": "50px"
   },
   {
     "key": "createAuthor",
@@ -224,36 +250,6 @@
     },
     "style-marginBottom": "20px",
     "style-marginTop": "20px"
-  },
-  {
-    "key": "DeleteAuthor",
-    "data-buildertype": "button",
-    "content": "Delete Author",
-    "basic": true,
-    "style-marginTop": "",
-    "style-marginBottom": "20px",
-    "events": {
-      "onClick": {
-        "active": true,
-        "triggers": [
-          {
-            "actions": [
-              "gridDelete",
-              "gridRefresh"
-            ],
-            "parameters": [
-              {
-                "name": "",
-                "value": ""
-              }
-            ],
-            "targets": [
-              "AuthorGrid"
-            ]
-          }
-        ]
-      }
-    }
   },
   {
     "key": "RefreshAuthors",
