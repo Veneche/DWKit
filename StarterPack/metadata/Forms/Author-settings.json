@@ -1,6 +1,6 @@
 {
   "name": "Author",
-  "lastUpdate": "2021-07-04T13:04:55.8458614+10:00",
+  "lastUpdate": "2021-07-04T15:08:49.1307406+10:00",
   "isTemplate": false,
   "triggers": [],
   "dataMap": [],
@@ -30,7 +30,7 @@
           "id": "7af99642-1e0e-b2c0-6ee7-7b6eaf20daf2",
           "attributeId": "a6107a45-8d64-461e-af96-a7f358ff1f66",
           "isEditable": false,
-          "isLoadable": false,
+          "isLoadable": true,
           "attributeSource": 0
         }
       ],
@@ -51,16 +51,16 @@
           "attributeSource": 0
         },
         {
-          "id": "2d47bace-036f-1917-7c60-55f3c573ede1",
-          "attributeId": "a6107a45-8d64-461e-af96-a7f358ff1f66",
-          "isEditable": false,
-          "isLoadable": false,
-          "attributeSource": 0
-        },
-        {
           "id": "4d57e05c-9ab4-1913-a783-8392f3d9260c",
           "attributeId": "cdb8027a-da8b-446d-be66-a5b596cbf6a9",
           "control": "LastName",
+          "isEditable": false,
+          "isLoadable": true,
+          "attributeSource": 0
+        },
+        {
+          "id": "2d47bace-036f-1917-7c60-55f3c573ede1",
+          "attributeId": "a6107a45-8d64-461e-af96-a7f358ff1f66",
           "isEditable": false,
           "isLoadable": true,
           "attributeSource": 0

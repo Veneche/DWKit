@@ -1,43 +1,65 @@
 {
   "name": "Book",
-  "lastUpdate": "2021-07-04T12:02:45.3063223+10:00",
+  "lastUpdate": "2021-07-04T17:16:06.3745215+10:00",
   "isTemplate": false,
   "triggers": [],
   "dataMap": [],
   "dataColl": [
     {
-      "id": "5052db3f-6319-672a-d8ff-a5643018d691",
+      "id": "dca8ba4b-9649-d89a-09b4-269956849128",
       "entityId": "7d919ff5-bc1d-4326-baa9-8b1542070059",
-      "control": "BookCollection",
+      "control": "BookGrid",
       "dataMap": [
         {
-          "id": "2b2bf1ca-ebe7-8d17-8845-736a63391ae5",
+          "id": "560d6583-a16c-b46a-3127-4eb35346a82b",
           "attributeId": "6140d210-0814-4ab7-9fea-ac463c7836bd",
-          "control": "Id",
           "isEditable": false,
-          "isLoadable": false,
+          "isLoadable": true,
           "attributeSource": 0
         },
         {
-          "id": "9e88227f-a303-4dfe-0e0e-374c33bfb3d9",
+          "id": "b593c570-8e6b-46cd-7a9d-c5f1bfd511bd",
+          "attributeId": "f5d1356e-3728-463b-aa71-03ba82e695ff",
+          "isEditable": false,
+          "isLoadable": true,
+          "attributeSource": 0
+        },
+        {
+          "id": "9beeb0cb-c41b-b37c-3f65-d9eaf249fb85",
           "attributeId": "4fd748b0-be68-45df-9942-3dff95588104",
           "control": "FirstName",
-          "parentId": "5ca3dde8-c884-44f0-51e5-652125605a08",
+          "parentId": "b593c570-8e6b-46cd-7a9d-c5f1bfd511bd",
           "isEditable": false,
           "isLoadable": true,
           "attributeSource": 0
         },
         {
-          "id": "1d8f0193-8f7c-38fb-101c-66c0f7a3abce",
+          "id": "450a6f4d-b1c0-8f40-8519-eb088c5b8da7",
+          "attributeId": "cdb8027a-da8b-446d-be66-a5b596cbf6a9",
+          "control": "LastName",
+          "parentId": "b593c570-8e6b-46cd-7a9d-c5f1bfd511bd",
+          "isEditable": false,
+          "isLoadable": true,
+          "attributeSource": 0
+        },
+        {
+          "id": "c9dd837e-977c-9a02-791c-4f0e0b34da35",
+          "attributeId": "dd600750-ffbc-4bd3-a6f6-ee6b6aec838b",
+          "isEditable": false,
+          "isLoadable": true,
+          "attributeSource": 0
+        },
+        {
+          "id": "1d4ee8c4-21ec-4112-c6ed-a8877ccb5d6e",
           "attributeId": "34471b71-539f-408c-a581-d3e32e7a54e8",
           "control": "Name",
-          "parentId": "1b0ead0d-fdcb-6b6e-ff4e-248fc9c455c9",
+          "parentId": "c9dd837e-977c-9a02-791c-4f0e0b34da35",
           "isEditable": false,
           "isLoadable": true,
           "attributeSource": 0
         },
         {
-          "id": "3061bf5b-071b-fcc7-b1e6-c64cce5a9ccf",
+          "id": "c676db20-f705-2865-c59e-2a213d06e616",
           "attributeId": "ccdd4064-8463-4e07-9a68-a9ea924a1b1f",
           "control": "Rating",
           "isEditable": false,
@@ -45,36 +67,11 @@
           "attributeSource": 0
         },
         {
-          "id": "779896b1-bf02-87b7-0b52-72f462b72eb1",
+          "id": "e9fc3193-1d12-7b76-bf5d-e196d3bdca88",
           "attributeId": "5be40757-eb1f-4f07-be8b-5f0ebacb32f1",
           "control": "Title",
           "isEditable": false,
           "isLoadable": true,
-          "attributeSource": 0
-        },
-        {
-          "id": "5ca3dde8-c884-44f0-51e5-652125605a08",
-          "attributeId": "f5d1356e-3728-463b-aa71-03ba82e695ff",
-          "control": "",
-          "isEditable": false,
-          "isLoadable": false,
-          "attributeSource": 0
-        },
-        {
-          "id": "958a6af1-c023-8ece-ea9d-8746dc0a9b4f",
-          "attributeId": "cdb8027a-da8b-446d-be66-a5b596cbf6a9",
-          "control": "LastName",
-          "parentId": "5ca3dde8-c884-44f0-51e5-652125605a08",
-          "isEditable": false,
-          "isLoadable": true,
-          "attributeSource": 0
-        },
-        {
-          "id": "1b0ead0d-fdcb-6b6e-ff4e-248fc9c455c9",
-          "attributeId": "dd600750-ffbc-4bd3-a6f6-ee6b6aec838b",
-          "control": "",
-          "isEditable": false,
-          "isLoadable": false,
           "attributeSource": 0
         }
       ],

@@ -1,0 +1,189 @@
+[
+  {
+    "key": "BookDetails",
+    "data-buildertype": "header",
+    "content": "Book Details",
+    "size": "medium"
+  },
+  {
+    "key": "form_1",
+    "data-buildertype": "form",
+    "children": [
+      {
+        "key": "Title",
+        "data-buildertype": "input",
+        "label": "Title",
+        "fluid": true,
+        "onChangeTimeout": 200,
+        "style-marginBottom": "20px"
+      },
+      {
+        "key": "SelectRating",
+        "data-buildertype": "dropdown",
+        "label": "Select Rating:",
+        "fluid": true,
+        "selection": true,
+        "data-elements": [
+          {
+            "value": 1,
+            "text": "1"
+          },
+          {
+            "value": 2,
+            "text": "2"
+          },
+          {
+            "value": 3,
+            "text": "3"
+          },
+          {
+            "__id": "CLIENT_8988f3a0-dc8f-11eb-b728-e9a0ac221b04",
+            "value": 4,
+            "text": "4"
+          },
+          {
+            "__id": "CLIENT_8b862330-dc8f-11eb-b728-e9a0ac221b04",
+            "value": 5,
+            "text": "5"
+          }
+        ],
+        "events": {
+          "onClick": {
+            "active": false,
+            "triggers": [
+              {
+                "actions": [],
+                "parameters": [
+                  {
+                    "name": "",
+                    "value": ""
+                  }
+                ],
+                "targets": []
+              }
+            ]
+          },
+          "onChange": {
+            "active": false,
+            "triggers": [
+              {
+                "actions": [],
+                "parameters": [
+                  {
+                    "name": "",
+                    "value": ""
+                  }
+                ],
+                "targets": []
+              }
+            ]
+          }
+        }
+      },
+      {
+        "key": "AuthorDictionary",
+        "data-buildertype": "dictionary",
+        "label": "Selected Author:",
+        "fluid": true,
+        "selection": true,
+        "dataModel": "Author",
+        "columns": "FirstName, LastName",
+        "events": {
+          "onChange": {
+            "active": false,
+            "triggers": [
+              {
+                "actions": [],
+                "parameters": [
+                  {
+                    "name": "",
+                    "value": ""
+                  }
+                ],
+                "targets": []
+              }
+            ]
+          },
+          "onDataReceived": {
+            "active": false,
+            "triggers": [
+              {
+                "actions": [],
+                "parameters": [
+                  {
+                    "name": "",
+                    "value": ""
+                  }
+                ],
+                "targets": []
+              }
+            ]
+          }
+        }
+      },
+      {
+        "key": "GenreDictionary",
+        "data-buildertype": "dictionary",
+        "label": "Selected Genre:",
+        "fluid": true,
+        "selection": true,
+        "dataModel": "Genre",
+        "columns": "Name"
+      }
+    ],
+    "style-width": "50%"
+  },
+  {
+    "key": "Save",
+    "data-buildertype": "button",
+    "content": "Save",
+    "primary": true,
+    "events": {
+      "onClick": {
+        "active": true,
+        "triggers": [
+          {
+            "actions": [
+              "validate",
+              "save",
+              "exit"
+            ],
+            "parameters": [
+              {
+                "name": "target",
+                "value": "/form/Book"
+              }
+            ],
+            "targets": []
+          }
+        ]
+      }
+    },
+    "style-marginTop": "20px"
+  },
+  {
+    "key": "Back",
+    "data-buildertype": "button",
+    "content": "Back",
+    "secondary": true,
+    "events": {
+      "onClick": {
+        "active": true,
+        "triggers": [
+          {
+            "actions": [
+              "exit"
+            ],
+            "parameters": [
+              {
+                "name": "target",
+                "value": "/form/Book"
+              }
+            ],
+            "targets": []
+          }
+        ]
+      }
+    }
+  }
+]

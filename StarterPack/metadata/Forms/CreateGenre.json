@@ -1,0 +1,92 @@
+[
+  {
+    "key": "header_1",
+    "data-buildertype": "header",
+    "content": "Genre Details",
+    "size": "medium"
+  },
+  {
+    "key": "form_1",
+    "data-buildertype": "form",
+    "children": [
+      {
+        "key": "GenreName",
+        "data-buildertype": "input",
+        "label": "Name",
+        "fluid": true,
+        "onChangeTimeout": 200,
+        "events": {
+          "onChange": {
+            "active": false,
+            "triggers": [
+              {
+                "actions": [],
+                "parameters": [
+                  {
+                    "name": "",
+                    "value": ""
+                  }
+                ],
+                "targets": []
+              }
+            ]
+          }
+        },
+        "other-required": true
+      }
+    ]
+  },
+  {
+    "key": "Save",
+    "data-buildertype": "button",
+    "content": "Save",
+    "primary": true,
+    "events": {
+      "onClick": {
+        "active": true,
+        "triggers": [
+          {
+            "actions": [
+              "validate",
+              "save",
+              "exit"
+            ],
+            "parameters": [
+              {
+                "name": "target",
+                "value": "/form/Genre"
+              }
+            ],
+            "targets": []
+          }
+        ]
+      }
+    },
+    "style-marginTop": "20px"
+  },
+  {
+    "key": "Back",
+    "data-buildertype": "button",
+    "content": "Back",
+    "events": {
+      "onClick": {
+        "active": true,
+        "triggers": [
+          {
+            "actions": [
+              "redirect"
+            ],
+            "parameters": [
+              {
+                "name": "target",
+                "value": "/form/Genre"
+              }
+            ],
+            "targets": []
+          }
+        ]
+      }
+    },
+    "secondary": true
+  }
+]

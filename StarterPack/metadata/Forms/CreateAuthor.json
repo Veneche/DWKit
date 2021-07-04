@@ -2,7 +2,7 @@
   {
     "key": "CreateAuthor",
     "data-buildertype": "header",
-    "content": "Add New Author",
+    "content": "Author Details",
     "size": "medium"
   },
   {
@@ -30,7 +30,7 @@
         "key": "Save",
         "data-buildertype": "button",
         "content": "Save",
-        "primary": false,
+        "primary": true,
         "secondary": false,
         "events": {
           "onClick": {
@@ -53,7 +53,32 @@
             ]
           }
         },
-        "basic": true
+        "basic": false
+      },
+      {
+        "key": "Back",
+        "data-buildertype": "button",
+        "content": "Back",
+        "secondary": true,
+        "events": {
+          "onClick": {
+            "active": true,
+            "triggers": [
+              {
+                "actions": [
+                  "exit"
+                ],
+                "parameters": [
+                  {
+                    "name": "target",
+                    "value": "/form/Author"
+                  }
+                ],
+                "targets": []
+              }
+            ]
+          }
+        }
       }
     ]
   }

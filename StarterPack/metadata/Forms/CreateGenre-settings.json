@@ -1,0 +1,26 @@
+{
+  "name": "CreateGenre",
+  "lastUpdate": "2021-07-04T15:16:07.4297301+10:00",
+  "entityId": "7bc2492b-254d-469d-bea0-101dfec22ccb",
+  "isTemplate": false,
+  "triggers": [],
+  "dataMap": [
+    {
+      "id": "ed8332f7-895f-8372-bcdd-33df13fb6623",
+      "attributeId": "3cc29f97-3c8c-44f2-8768-47c2e71baffc",
+      "isEditable": false,
+      "isLoadable": true,
+      "attributeSource": 0
+    },
+    {
+      "id": "6256485d-528c-fa2c-7289-46aba5f23055",
+      "attributeId": "34471b71-539f-408c-a581-d3e32e7a54e8",
+      "control": "GenreName",
+      "isEditable": false,
+      "isLoadable": true,
+      "attributeSource": 0
+    }
+  ],
+  "dataColl": [],
+  "actionHandlers": []
+}

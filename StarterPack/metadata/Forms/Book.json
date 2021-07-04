@@ -11,49 +11,318 @@
     "widths": "equal",
     "children": [
       {
-        "key": "search_1",
-        "data-buildertype": "search"
+        "key": "formgroup_2",
+        "data-buildertype": "formgroup",
+        "widths": "equal",
+        "children": [
+          {
+            "key": "FilterByTitle",
+            "data-buildertype": "input",
+            "label": "Filter By Title",
+            "fluid": true,
+            "onChangeTimeout": 200,
+            "events": {
+              "onChange": {
+                "active": true,
+                "triggers": [
+                  {
+                    "actions": [
+                      "setFilter",
+                      "applyFilter"
+                    ],
+                    "parameters": [
+                      {
+                        "name": "column",
+                        "value": "Title"
+                      }
+                    ],
+                    "targets": [
+                      "BookGrid"
+                    ]
+                  }
+                ]
+              }
+            },
+            "style-width": "",
+            "style-source": "",
+            "style-marginBottom": "20px",
+            "style-marginRight": "",
+            "readOnly": false
+          }
+        ],
+        "style-source": "float:left;",
+        "style-width": "20%",
+        "style-marginLeft": "",
+        "style-marginRight": "",
+        "events": {}
+      },
+      {
+        "key": "formgroup_3",
+        "data-buildertype": "formgroup",
+        "widths": "equal",
+        "children": [
+          {
+            "key": "FilterByGenre",
+            "data-buildertype": "input",
+            "label": "Filter By Genre",
+            "fluid": true,
+            "onChangeTimeout": 200,
+            "events": {
+              "onChange": {
+                "active": true,
+                "triggers": [
+                  {
+                    "actions": [
+                      "setFilter",
+                      "applyFilter"
+                    ],
+                    "parameters": [
+                      {
+                        "name": "column",
+                        "value": "Name"
+                      }
+                    ],
+                    "targets": [
+                      "BookGrid"
+                    ]
+                  }
+                ]
+              }
+            },
+            "style-width": "",
+            "style-source": "",
+            "style-marginLeft": "",
+            "style-marginRight": "",
+            "labelPosition": ""
+          }
+        ],
+        "style-source": "float:left;",
+        "style-width": "20%"
+      },
+      {
+        "key": "formgroup_4",
+        "data-buildertype": "formgroup",
+        "widths": "equal",
+        "children": [
+          {
+            "key": "FilterByAuthor",
+            "data-buildertype": "input",
+            "label": "Filter By Author",
+            "fluid": true,
+            "onChangeTimeout": 200,
+            "events": {
+              "onChange": {
+                "active": true,
+                "triggers": [
+                  {
+                    "actions": [
+                      "setFilter",
+                      "applyFilter"
+                    ],
+                    "parameters": [
+                      {
+                        "name": "column",
+                        "value": "FirstName,LastName"
+                      }
+                    ],
+                    "targets": [
+                      "BookGrid"
+                    ]
+                  }
+                ]
+              }
+            },
+            "style-width": ""
+          }
+        ],
+        "style-source": "float:left;",
+        "style-width": "20%"
       }
-    ]
+    ],
+    "orientation": "inline",
+    "style-width": "100%",
+    "widthsCustom": "3",
+    "style-marginBottom": "100px"
+  },
+  {
+    "key": "formgroup_5",
+    "data-buildertype": "formgroup",
+    "widths": "equal",
+    "style-width": "100%",
+    "children": [
+      {
+        "key": "formgroup_8",
+        "data-buildertype": "formgroup",
+        "widths": "equal",
+        "children": [
+          {
+            "key": "FilterByRating",
+            "data-buildertype": "dropdown",
+            "label": "Filter By Rating",
+            "fluid": false,
+            "selection": true,
+            "data-elements": [
+              {
+                "value": 1,
+                "text": "1"
+              },
+              {
+                "value": 2,
+                "text": "2"
+              },
+              {
+                "value": 3,
+                "text": "3"
+              },
+              {
+                "__id": "CLIENT_07058720-dc96-11eb-b728-e9a0ac221b04",
+                "text": "4",
+                "value": 4
+              },
+              {
+                "__id": "CLIENT_087e4470-dc96-11eb-b728-e9a0ac221b04",
+                "value": 5,
+                "text": "5"
+              }
+            ],
+            "events": {
+              "onClick": {
+                "active": false,
+                "triggers": [
+                  {
+                    "actions": [],
+                    "parameters": [
+                      {
+                        "name": "",
+                        "value": ""
+                      }
+                    ],
+                    "targets": []
+                  }
+                ]
+              },
+              "onChange": {
+                "active": true,
+                "triggers": [
+                  {
+                    "actions": [
+                      "setFilter",
+                      "applyFilter"
+                    ],
+                    "parameters": [
+                      {
+                        "name": "column",
+                        "value": "Rating"
+                      }
+                    ],
+                    "targets": [
+                      "BookGrid"
+                    ]
+                  }
+                ]
+              }
+            },
+            "style-source": ""
+          }
+        ],
+        "style-source": "float:left;",
+        "style-width": "20%"
+      },
+      {
+        "key": "formgroup_6",
+        "data-buildertype": "formgroup",
+        "widths": "equal",
+        "children": [
+          {
+            "key": "FilterRatingMin",
+            "data-buildertype": "input",
+            "label": "Min Rating",
+            "fluid": false,
+            "onChangeTimeout": 200,
+            "type": "number",
+            "style-source": "",
+            "style-width": "50px"
+          }
+        ],
+        "style-source": "float:left;",
+        "style-width": "10%"
+      },
+      {
+        "key": "formgroup_7",
+        "data-buildertype": "formgroup",
+        "widths": "equal",
+        "children": [
+          {
+            "key": "FilterRatingMax",
+            "data-buildertype": "input",
+            "label": "Max Rating",
+            "fluid": false,
+            "onChangeTimeout": 200,
+            "type": "number",
+            "style-source": "",
+            "style-width": "50px"
+          }
+        ],
+        "style-source": "float:left;",
+        "style-width": "10%"
+      }
+    ],
+    "style-marginBottom": "100px"
   },
   {
     "key": "form_1",
     "data-buildertype": "form",
     "children": [
       {
-        "key": "BookCollection",
-        "data-buildertype": "collectioneditor",
+        "key": "BookGrid",
+        "data-buildertype": "gridview",
         "columns": [
           {
             "key": "Title",
-            "name": "Title"
+            "name": "Title",
+            "sortable": true,
+            "filterable": false,
+            "resizable": false
           },
           {
             "key": "FirstName",
-            "name": "Author First Name"
+            "name": "Author First Name",
+            "sortable": true,
+            "filterable": false,
+            "resizable": false
           },
           {
-            "__id": "CLIENT_32baecc0-dc69-11eb-b3ef-fdb8fc43664e",
             "key": "LastName",
-            "name": "Author Last Name"
+            "name": "Author Last Name",
+            "sortable": true,
+            "filterable": false,
+            "resizable": false
           },
           {
-            "__id": "CLIENT_ac079660-dc68-11eb-b3ef-fdb8fc43664e",
+            "__id": "CLIENT_13bb89e0-dc89-11eb-b728-e9a0ac221b04",
             "key": "Name",
-            "name": "Genre"
+            "name": "Genre",
+            "sortable": true,
+            "filterable": false,
+            "resizable": false
           },
           {
-            "__id": "CLIENT_b0e577b0-dc68-11eb-b3ef-fdb8fc43664e",
+            "__id": "CLIENT_19c60450-dc89-11eb-b728-e9a0ac221b04",
             "key": "Rating",
             "name": "Rating",
-            "control": "number",
-            "width": "100px"
+            "type": "number",
+            "sortable": true,
+            "filterable": false,
+            "resizable": false,
+            "width": 50
           }
         ],
-        "idField": "Id",
-        "readOnly": true,
+        "multiselect": true,
+        "editForm": "CreateBook",
+        "rowKey": "Id",
+        "editFormShowType": "sidebar",
         "events": {
-          "onChange": {
+          "onRowClick": {
             "active": false,
             "triggers": [
               {
@@ -68,7 +337,24 @@
               }
             ]
           },
-          "onAdd": {
+          "onRowDblClick": {
+            "active": true,
+            "triggers": [
+              {
+                "actions": [
+                  "gridEdit"
+                ],
+                "parameters": [
+                  {
+                    "name": "",
+                    "value": ""
+                  }
+                ],
+                "targets": []
+              }
+            ]
+          },
+          "onSelectionChanged": {
             "active": false,
             "triggers": [
               {
@@ -83,22 +369,7 @@
               }
             ]
           },
-          "onDelete": {
-            "active": false,
-            "triggers": [
-              {
-                "actions": [],
-                "parameters": [
-                  {
-                    "name": "",
-                    "value": ""
-                  }
-                ],
-                "targets": []
-              }
-            ]
-          },
-          "onCopy": {
+          "onModalClosed": {
             "active": false,
             "triggers": [
               {
@@ -114,8 +385,43 @@
             ]
           }
         },
-        "style-source": "text-align:left;"
+        "style-width": "100%",
+        "style-height": "auto",
+        "autoHeight": false,
+        "style-source": "text-align:center;"
       }
-    ]
+    ],
+    "style-width": "100%",
+    "style-height": "auto",
+    "style-marginTop": "180px"
+  },
+  {
+    "key": "AddBook",
+    "data-buildertype": "button",
+    "content": "Add New Book",
+    "primary": false,
+    "basic": true,
+    "events": {
+      "onClick": {
+        "active": true,
+        "triggers": [
+          {
+            "actions": [
+              "gridCreate"
+            ],
+            "parameters": [
+              {
+                "name": "",
+                "value": ""
+              }
+            ],
+            "targets": [
+              "BookGrid"
+            ]
+          }
+        ]
+      }
+    },
+    "style-marginTop": "20px"
   }
 ]

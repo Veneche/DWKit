@@ -1,0 +1,50 @@
+{
+  "name": "CreateBook",
+  "lastUpdate": "2021-07-04T16:22:24.552918+10:00",
+  "entityId": "7d919ff5-bc1d-4326-baa9-8b1542070059",
+  "isTemplate": false,
+  "triggers": [],
+  "dataMap": [
+    {
+      "id": "cb437008-c78e-08c1-9194-dc40c34f20e1",
+      "attributeId": "6140d210-0814-4ab7-9fea-ac463c7836bd",
+      "isEditable": false,
+      "isLoadable": true,
+      "attributeSource": 0
+    },
+    {
+      "id": "4f1a0b97-96ac-eebf-0fcf-dedcfaf5c328",
+      "attributeId": "f5d1356e-3728-463b-aa71-03ba82e695ff",
+      "control": "AuthorDictionary",
+      "isEditable": false,
+      "isLoadable": true,
+      "attributeSource": 0
+    },
+    {
+      "id": "a8f02194-d5e0-da41-4c42-823e8caa7353",
+      "attributeId": "dd600750-ffbc-4bd3-a6f6-ee6b6aec838b",
+      "control": "GenreDictionary",
+      "isEditable": false,
+      "isLoadable": true,
+      "attributeSource": 0
+    },
+    {
+      "id": "5457e0ef-c3f1-1387-0aea-d22973c3c93c",
+      "attributeId": "ccdd4064-8463-4e07-9a68-a9ea924a1b1f",
+      "control": "SelectRating",
+      "isEditable": false,
+      "isLoadable": true,
+      "attributeSource": 0
+    },
+    {
+      "id": "f17ef5a6-abf9-1777-ad99-122130fb4b74",
+      "attributeId": "5be40757-eb1f-4f07-be8b-5f0ebacb32f1",
+      "control": "Title",
+      "isEditable": false,
+      "isLoadable": true,
+      "attributeSource": 0
+    }
+  ],
+  "dataColl": [],
+  "actionHandlers": []
+}
